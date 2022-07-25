@@ -3,9 +3,9 @@
 
 ![Video presentation of our project](/Screenshots/video_presentation.mp4)
 
-![Sample individual page](/Screenshots/Screenshot 2022-01-17 091808.png)
+![Sample individual page](/Screenshots/individualpage.png)
 
-![Database Page](/Screenshots/![About Us Page](/Screenshots/Screenshot 2022-01-17 091730.png)
+![Database Page](/Screenshots/db.png)
 
 
 ## Purpose
@@ -40,7 +40,7 @@ While the problems cited above may seem inconsequential, if our database was mea
 Our overarching design philosophy, although it is perhaps a bit misleading to glorify it by labelling it as such, was to go for sheer minimalism. We had some prior experience with HTML and CSS, but we all felt that there were a lot of messy interactions with both coding languages; that a small change, could unexpectedly break the whole website. By embracing a minimalist philosophy, we could achieve a very “clean” look that did not look too messy, while requiring the minimal amount of coding in HTML and CSS. Partly out of some degree of incompetence, but mostly because of the limited scope of the project and time constraint.
 Some of the websites were programmed with PHP. The individual pages for each Pokémon that appear when a user clicks on them in the big database on our home page used PHP. By making use of $_GET, when the user clicked on a Pokémon in the table they would be redirected towards another php page, storing the information of which Pokémon the user clicked on. This new php page would then be a template that was filled out with data from the entry of the clicked-on Pokémon in the SQL table by making a following request in PHP. By doing this, we could get by with creating a single php page, instead of 898 .html files.
 
- ![Sample individual page](/Screenshots/Screenshot 2022-01-17 091808.png)
+![Sample individual page](/Screenshots/individualpage.png)
 
 ## Connection to Wamp and extracting data from SQL
 The website’s database is created by a PHP script that adds every needed piece of information from each row of the SQL file into a table. First, a connection must be made with Wampserver’s local host which can be made in essentially one line of code, we cache the table stored on the local host with the data we web scraped as a variable. The next step is to make a new variable where we filter out/specify the data we want by passing an SQL request into the local host database. Neither of these two variables are in a format that can be converted to string explicitly since they are variables of type sqli_object. 
@@ -60,7 +60,7 @@ For additional search queries, when adding extra conditions to the SQL we need t
   
 For the Pokémon type checkboxes, the user can select a maximum of two types at a time, this is because all Pokémon can only have 1 or 2 types. In addition to this, all of the checkboxes have the same class and name meaning $_GET{type} will return an array and so to append the conditions for type to the SQL request we have to loop through all of the elements in the array (there might only be one) and append each part to the value that will be added to the SQL request.
   
-![Database Page](/Screenshots/![About Us Page](/Screenshots/Screenshot 2022-01-17 091730.png)
+![Database Page](/Screenshots/db.png)
 
 
 ## The Navigation Bar
@@ -70,12 +70,16 @@ A comprehensive navigation bar is essential when creating a good website.  The w
 ## About Us Page
 A #main_div centers the main contents of the page followed by a first heading and a horisontal line with div class #divider thematic break. Each member of the team has his own ‘info card’ embedded next to a Pokémon professor of choice. As the name suggests, div ID #info encloses the relevant text, which is separated into several paragraphs within the div class .title giving it a distinct grey look. A further distinction had to be made between div IDs #picture and #picture_right for picture placements relative to their respective #info contents. The .the_people div class was an attempt to group the pictures together with their ‘info cards’ but didn’t work (yet) and currently serves no purpose. For some reason, the br tag did not work as we wanted it to, so a new blank div .clear was created to add a page break between each person.
 
- ![About Us Page](/Screenshots/Screenshot 2022-01-17 091852.png)
+![About Us Page](/Screenshots/aboutus.png)
 
 ## Shop Page
 The format of the shop is similar to the About Us page. 6 Pokémon Bodybuilder figurines are presented in their .card div class. Each has side margins of 2% to centre 3 divs per row. Note the different image width in the html file, which is due to the original picture sizes of the different bodybuilders being different, and as such needed adapting to be all on the same row. The button ‘Add to cart’ takes the user to the Amazon webpage of the respective figurine.
   
- ![Shop Page](/Screenshots/Screenshot 2022-01-17 091948.png)
+![Shop Page](/Screenshots/shop.png)
   
   Occasion Noise in cuteness judgements:
+ 
+![Noise1](/Screenshots/NoiseDiagram.png)
+ 
+![Noise2](/Screenshots/NoiseDiagram2.png)
  
