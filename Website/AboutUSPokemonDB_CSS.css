@@ -1,0 +1,136 @@
+* {
+    font-family: Century Gothic, Calibri;
+}
+
+body {
+    margin: 0;
+}
+ 
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: right;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: grey;
+}
+
+#small_div {
+  width: 90%;
+}
+
+.navbar img {
+  float: left;
+  height: 82px;
+  margin-left: 10%;
+}
+
+
+
+
+#main_div {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: white;
+  height: 100%;
+  width: 60%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+}
+#divider {
+    margin-bottom: 5%;
+    width: 80%;
+}
+
+ 
+#first_text {
+    text-align: center;
+    font-size: 25px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+#the_names {
+	text-align:left;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+#picture_right {
+    float: right;
+    width: 34%;
+	
+	
+}
+#second_divider{
+	float:left;
+	width:100%;
+}
+
+.the_people {
+	float: center;
+	width: 100%;
+	margin-bottom: 20px;
+	display:block;
+}
+
+
+
+.clear {
+    clear: both;
+}
+
+
+
+#picture {
+    float: left;
+    width: 25%;
+}
+
+.title {
+  color: grey;
+}
+.title em{
+  color: black;
+}
+
+#info {
+    float: left;
+    width: 50%;
+	padding-left: 50px;
+}
+
